@@ -23,6 +23,10 @@
             // console.log(guessesLeft)
                   // finds the key that was pressed.
                   var userGuess = event.key;
+                  
+                  if (guessedLetters.includes(userGuess)) {
+                    alert("letter is already included")
+                  }
                   //  Computer chooses a letter from the  array. 
                   // push userGuess value into guessesletters array
                   guessedLetters.push(userGuess);
